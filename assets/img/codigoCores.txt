@@ -1,2 +1,20 @@
 Cor dos ícones:
 #CF1933
+
+Sombra ícones:
+#ffedf0
+
+Background:
+#DAC9CC
+
+Borda pontilhada:
+#9C1327
+
+Backgound da imagem (container):
+#ff3a544f
+
+Background inf. contato:
+#ffdae0
+
+Background inf, map contato:
+#ff3a544f

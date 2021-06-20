@@ -1,42 +1,103 @@
 /*Estilo da página index.html*/
+
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background: #DAC9CC;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mx {
+    padding: 0px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .center {
     text-align: center;
 }
+
 .justify{
     text-align: justify;
 }
+
 .container {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
 }
+
+.border {
+    border: 4px dotted #9C1327;
+}
+
+.bgd1 {
+    border-radius: 160px;
+    background-color: #ff3a544f;
+}
+
+.navbar{
+    top: 0;
+    width: auto;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background-color: #3d070f3f;
+}
+
+.fixed {
+    display: flex;
+    position: sticky;
+}
+
 #menu li {
     display: inline;
     padding: 15px;
 }
+
 #menu li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
 }
+
 #menu li a:hover {
-    color: #CF1933;
+    color: gainsboro;
 }
+
 .p-30 {
     padding: 30px;
 }
+
 .br-50 {
     border-radius: 50%;
 }
+
 .wh-300{
     width: 300px;
     height: 300px;
 }
+
+.wh-215 {
+    width: 215px;
+    height: 215px;
+}
+
+.wh-200 {
+    width: 200px;
+    height: 200px;
+}
+
 .tm-social{
     width: 50px;
     height: 50px;
 }
+.tm-social:hover {
+    filter: drop-shadow(0 0 0.75rem #ffedf0);
+}
+
 .mb-50{
     margin-bottom: 50px;
 }
@@ -45,10 +106,61 @@
 
 /*Estilo da página gosto.html*/
 
+.espc {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bgd4 {
+    border-radius: 20px;
+    background-color: #ff3a544f;
+}
 
 
 /*Estilo da página contato.html*/
 
 .ml-50{
     margin-left: 50px;
+}
+
+.bgd2 {
+    border-radius: 25px ;
+    padding: 20px;
+    background-color: #ffdae0;
+}
+
+.bgd3 {
+    border-radius: 25px ;
+    padding: 25px;
+    margin: 1rem 10rem ;
+    background-color: #ff3a544f;
+}
+.espcd {
+    margin-bottom: 3rem;
+}
+
+
+/* Estilização da barrinha abaixo dos botões*/
+
+.line{	
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+}
+.line::after{
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 0.07em;
+	background-color: #CF1933;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform 550ms; 
+}
+
+.line:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
 }
